@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="qNq-kK-JxB">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="TIN-LR-rQ2">
+            <objects>
+                <navigationController storyboardIdentifier="NewWindowID" id="qNq-kK-JxB" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="6BF-yF-9hk">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="KO8-pK-fVH" kind="relationship" relationship="rootViewController" id="6U5-yb-nQd"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kgd-3j-Sz9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="124" y="155"/>
+        </scene>
+        <!--New View Controller-->
+        <scene sceneID="1GY-zj-edi">
+            <objects>
+                <viewController id="KO8-pK-fVH" customClass="NewViewController" customModule="CreateNewUIWindow" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="HKg-oz-sCk">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="New UIWindow" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="8uV-dY-lvv">
+                                <rect key="frame" x="0.0" y="302" width="375" height="63"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="52"/>
+                                <color key="textColor" red="1" green="0.21124812179999999" blue="0.3243978689" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.022025283862970091" blue="0.040275139439385432" alpha="0.5" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="8uV-dY-lvv" firstAttribute="leading" secondItem="HKg-oz-sCk" secondAttribute="leading" id="GfF-aT-kwc"/>
+                            <constraint firstAttribute="trailing" secondItem="8uV-dY-lvv" secondAttribute="trailing" id="O7l-8D-3nG"/>
+                            <constraint firstItem="8uV-dY-lvv" firstAttribute="centerX" secondItem="HKg-oz-sCk" secondAttribute="centerX" id="gTn-2v-LQf"/>
+                            <constraint firstItem="8uV-dY-lvv" firstAttribute="centerY" secondItem="HKg-oz-sCk" secondAttribute="centerY" id="i8H-Hw-3DP"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="vUq-7R-Jo5"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="zUb-U6-snV">
+                        <barButtonItem key="leftBarButtonItem" title="Remove New UIWindow" id="8Ny-zl-Hs3">
+                            <connections>
+                                <action selector="stopButtonPressed:" destination="KO8-pK-fVH" id="bMH-19-ncQ"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Xcl-cB-f1j" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1145" y="154"/>
+        </scene>
+    </scenes>
+</document>
